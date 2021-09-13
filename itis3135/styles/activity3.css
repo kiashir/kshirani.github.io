@@ -1,9 +1,9 @@
-/*ITIS 3135 Activity 3 css file*/
 
-/*styling for the whole page goes here*/
+/*styling for the whole page*/
 body {
+	font-family:Book Antiqua
 	font-size: 16px;
-    background-color: #eeeeee;
+    background-color:#B0E0E6 /*#eeeeee*/;
 	color: #680000;
 }
 
@@ -12,8 +12,12 @@ h1 {
 	font-style: italic;
 	font-size: 28px;
     text-align: center;
-    background-color: #996600;
-	color: #f8f8f8;
+    background-color: #BC8F8F;
+	color:#f8f8f8;
+}
+
+h2 {
+	color:#A0522D
 }
 
 /*styling for the overall table*/
@@ -35,7 +39,7 @@ th {
 
 /*styling for the tables*/
 .altrow {
-	background-color: #E0E0E0;
+	background-color: #F4A460/*#E0E0E0*/;
 }
 
 /*styling for the Google Map link*/
@@ -53,33 +57,39 @@ footer {
 
 #selector {
 	border: 5px dashed black;
-	background-color: #996600;
+	background-color: #BC8F8F/*#996600*/;
 }
 
 #selector2 {
 	border: 5px dashed black;
-	background-color: #996600;
-	color: white;
+	background-color: #BC8F8F/*#996600*/;
+	color: ivory;
 }
 
 #selector3 {
 	border: 5px dashed black;
-	background-color: #996600;
-	color: white;
+	background-color: #BC8F8F/*#996600*/;
+	color: ivory;
 }
 
 button{
 	background-color: brown;
 	color:white;
-	font-family:Tahoma
+	font-family:Impact,Tahoma
 }
 
 input{
-	font-family:Tahoma;
+	font-family:Tahoma,Book Antiqua;
 	font-weight:bold;
 	color: blue;
 	border: none;
-	border-left: 3px solid green;	
-    border-bottom: 3px solid green;
-	background-color: lightblue;
+	border-left: 3px solid #F4A460;	
+    border-bottom: 3px solid #F4A460;
+	background-color: lightyellow;
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+	color: blue;
 }
