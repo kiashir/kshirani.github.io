@@ -22,12 +22,12 @@ h1, h2, h3
 	text-align: center;
 }
 
-h3
+/*h3
 {
 	font-size: 200%;
 	line-height: 0px;
 }
-
+*/
 a
 {
 	text-decoration: none;
@@ -68,8 +68,65 @@ nav
 	text-align: left;
 }
 
-#text{
+.text{
 	text-align: center;
 	font-size: 150%;
 }	
-	
+
+table
+{
+	border-collapse: collapse;
+	background-color:green ;
+	margin: 20px;
+}
+
+thead
+{
+	background-color:green ;
+}
+
+th, td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}	
+
+.right
+{
+	text-align: right;
+}
+
+tbody tr:nth-child(odd) td
+{
+	background-color: lightgreen;
+	color: DarkSlateGrey;
+}
+
+#selector {
+	border: 5px dashed black;
+	background-color: DarkSlateGray;/*#996600*/
+}
+
+.selector2 {
+	border: 5px dashed black;
+	background-color: DarkSlateGray;/*#996600*/
+	color:#FFEFD5 ;
+}
+
+button{
+	background-color: brown;
+	color:white;
+	font-family:Impact,Tahoma;
+}
+
+input{
+	font-family:Tahoma,Book Antiqua;
+	font-weight:bold;
+	color: green;
+	border: none;
+	border-left: 3px solid tomato;	
+    border-bottom: 3px solid tomato;
+	background-color: lightyellow;
+}
