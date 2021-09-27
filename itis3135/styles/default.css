@@ -132,8 +132,11 @@ input{
 }
 
 .center {
-	margin-left: 30px;
-	margin-right: 30px;	
+	text-align: center;
+}
+
+.custombutton{
+	background-color:DarkRed;
+	color: white;
 	font-family: Tahoma;
-	
 }
