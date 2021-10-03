@@ -53,6 +53,7 @@ function convertInchToCm(){
 }
 
 function reverseWord(){
-    let word = prompt("Enter the word to reverse:");
+    let word = window.prompt("Enter the word to reverse:");
     alert("The reversed version: " + word.split("").reverse().join(""));
 }
+
