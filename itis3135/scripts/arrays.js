@@ -70,8 +70,8 @@ function displayResults(){
     //
     total = total;//.toFixed(2);
     
-    document.getElementById("results").innerHTML = "<h2>Results: </h2>" + "<p> Average Salary is: </p>" + "$ "+ average + "k/month" 
-    + "<p>Highest salary is: </p>" +"$ " + highest + "k/month"+ "<p>Total of all Salaries: </p>" + "$ " + total + "k/month";
+    document.getElementById("results").innerHTML = "<h2>Results: </h2>" + "<p> Average salary is: </p>" + "$ "+ average + "k/month" 
+    + "<p>Highest salary is: </p>" +"$ " + highest + "k/month"+ "<p>Total of all salaries: </p>" + "$ " + total + "k/month";
     }else{
         alert("You must first enter salary for all new employees to see the updated result!!!")
     }
@@ -85,7 +85,7 @@ function displaySalary(){
     for(i=0;i<salary.length;i++){
         //Recent Change
         if (typeof salary[i] == "undefined"){
-            salaryTable +="<tr><td>" + person[i] + "</td><td>$ " + "--"+"k/month </td></tr>";
+            salaryTable +="<tr><td>" + person[i] + "</td><td>$ " + "--"+"/month </td></tr>";
         }
         //
         else{
