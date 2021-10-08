@@ -7,7 +7,7 @@ function guide(){
     " in the salary input box then click on 'Add/Change Salary' to add or change the selected employee's salary.\n"+
     "Additional Tips: \n"+
     "-Click on 'Add New Employee' to add a new employee name to the drop down list.\n"+
-    "-Click on 'Display Results to view the updated result after each change.\n"+
+    "-Click on 'Display Results' to view the updated result after each change.\n"+
     "-Click on 'Display Salaries' to view the updated salary table after each change.");
 }
 
