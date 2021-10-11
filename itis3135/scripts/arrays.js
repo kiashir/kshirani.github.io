@@ -18,9 +18,9 @@ function addEmployee()
         newPerson = prompt("Enter new employee's name: "),
         newOption = document.createElement("OPTION"),
         newOptionVal = document.createTextNode(newPerson);
-    if (newPerson === "") {
+    if (newPerson === "" || newPerson[0] === " ") {
             // If user pressed OK, but the input field is empty.
-            alert("No employee was added.");
+            alert("You must enter a valid name. No employee was added.\nAdditional Tip: Do Not start a name with a SPACE.");
     } else if (newPerson) {
             // If user entered something and hit OK button.
             newOption.appendChild(newOptionVal);
