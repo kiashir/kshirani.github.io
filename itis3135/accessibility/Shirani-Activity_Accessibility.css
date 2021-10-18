@@ -1,0 +1,122 @@
+/* background image */
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Candle-Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* top heading */
+header,
+h2 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(209, 212, 34);
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 20px;
+  color: rgb(8, 8, 153);
+
+}
+
+/* font size */
+body {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* table format*/
+td,
+th {
+  border: 1px solid black;
+
+  padding: 8px;
+  background-color:#262626;
+  color:powderblue;
+  text-align: left;
+  
+}
+
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color:#262626;
+ 
+  color:rgb(233, 212, 212);
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* form */
+form {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color:black;
+}
+
+
+/* footer bottom of page*/
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 70px;
+ 
+}
+
+abbr {
+  text-decoration: none;
+
+}
+
+/* whitespace */
+.whitespace {
+  padding: 10px;
+}
+
+.whitespace2 {
+  padding: 60px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img {
+  width: 100px;
+  height: 90px;
+}
+
+button{
+  color:antiquewhite;
+  background-color: black;
+}
+
+.custom-div{
+  background-color: burlywood;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-style: dashed;
+  border-radius: 20px;
+}
+
+a{
+  color: rgb(51, 210, 30);
+}
+
+a:hover{
+  color: rgb(255, 230, 0);
+}
+
