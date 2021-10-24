@@ -152,7 +152,26 @@ input{
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	border: 5px solid rgb(156, 18, 18);
   }
+
+.custom-li{
+	padding: 0 0.6em;
+	display: inline;
+	font-size: large;
+	text-align: center;	
+}
+
+.custom-div{
+	background-color: rgb(104, 14, 14);
+	color: brown;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-style: dashed;
+	border-radius: 20px;
+  }
+
+
 
 /* 
 =====================================================
