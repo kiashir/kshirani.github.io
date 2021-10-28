@@ -22,6 +22,7 @@ function placeOrder(){
 }
 
 function clearOrder(){
+	total = 0;
 	document.getElementById("order").innerHTML = "";
 	document.getElementById("total").innerHTML = "";
 	document.getElementById("result").innerHTML = "";
