@@ -57,6 +57,13 @@ input {
 }
 /* add styling for buttons on homepage */
 
+.custom{
+	background-color: brown;
+	color: azure;
+	padding: 15px;
+
+}
+
 
 
 
