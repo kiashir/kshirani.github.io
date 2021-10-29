@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="scripts/brand.js"></script>
+	<title>Kiarash Shirani,ITIS 3135-051 ,Whimsical Brand </title>
+	
+	<!-- 
+	<style>
+		body{
+			background-color: #C9C5BA;
+			color: #191970;
+			border-radius: 25px;
+			border-style: dashed;
+			border-width: 6px;
+			border-color: #B22222;
+			margin-left: 80px;
+			margin-right: 80px;
+		}
+		
+		header, footer{
+			text-align: center;
+			color: #407076;
+			font-weight: bold;
+		}
+		
+		h1{
+			color: #800000;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			text-align: center;
+		}
+		
+		h2{
+			color: #800000;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			text-align: center;
+		}
+		li{
+			list-style-type: square;
+			font-size: 130%;
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		p{
+		    font-size: 130%;
+			margin-left: 100px;
+			margin-right: 100px;			
+		}
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}-->
+	
+	</style>
+</head>
+
+<body>
+	<header>
+			<br>
+			<img  src="images/sphinx-text-logo.png" alt="Kind Sphinx Logo" width="200" height="100">
+			<h1>Kind Sphinx Company </h1>
+			
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+	</nav>	
+	
+	<main>
+			<h2>Contact Page</h2>
+
+			<h2 class="title">Sign Up For Our Company's Newsletter</h2>
+			
+			<form id="selector" action=”#”>
+				<input id="name" type="text" placeholder="Name" required>
+			    <input id="email" type="text" placeholder="Email Address" required>
+				<input id="phone" type="text" placeholder="Phone Number" size="10" required>
+				<select id="state" name="states" required>
+				<option  value="" selected disabled>Choose state:</option>
+				<option value="VA">VA</option>
+				<option value="NC">NC</option>
+				<option value="SC">SC</option>
+				<option value="other (Not VA, NC, SC)">Other</option>
+				</select>
+				<br><br>
+
+				<!--<button id="sub" type="submit">Submit</button>-->
+            </form>
+			<br>
+			
+			<formn id="design-" class="selector2" action=”#” >
+				<input type="checkbox" id="basic"  name="design" value="basic">
+				<label for="basic"> I like basic designs </label><br>
+				<input type="checkbox" id="advanced"  name="design" value="advanced">
+				<label for="advanced"> I like advanced designs</label><br>
+				<input type="checkbox" id="pro" name="design" value="pro">
+				<label for="pro"> I like professional designs</label>
+		        <br><br>
+				<button type="submit">Submit</button>
+				
+			</form>
+			<br>
+			<div id="dispPicks">
+			<form id="prefer" class="selector2" action=”#”> 	
+			<input type="radio" id="email" name="preference" value="email">
+			<label for="email">I prefere to be contacted through email</label><br>
+            <input type="radio" id="text" name="preference" value="text">
+            <label for="text">I prefere to be contacted through text</label><br>
+            <input type="radio" id="nomatter" name="preference" value="nomatter">
+            <label for="nomatter">I have no preference</label>
+				<br><br>
+			<button type="submit">Submit</button>	
+            </form>	
+		</div>	
+			<button onclick="info()">Show my Input</button>
+			<p id=result></p>
+			
+			
+	
+	
+			<br><br>
+	</main>
+	
+	<p><button class="center" onclick="w3.toggleShow('#footer')">Click to Hide/Show the Footer</button></p>
+
+	<div id="footer">
+		<footer>
+			<p>Designed by <a href="brand-kind-sphinx.html">Kind Sphinx Company</a> 2021</p>
+ 
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+	
+		</footer>
+	</div>
+
+
+
+</body></html>	
