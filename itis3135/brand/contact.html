@@ -5,76 +5,33 @@
 	<link href="styles/default.css" rel="stylesheet" type="text/css">
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 	<script src="scripts/brand.js"></script>
-	<title>Kiarash Shirani,ITIS 3135-051 ,Whimsical Brand </title>
+	<script src="scripts/include.js"></script>
+	<title>Kiarash Shirani | ITIS 3135-051 | Contact Page </title>
 	
-	<!-- 
-	<style>
-		body{
-			background-color: #C9C5BA;
-			color: #191970;
-			border-radius: 25px;
-			border-style: dashed;
-			border-width: 6px;
-			border-color: #B22222;
-			margin-left: 80px;
-			margin-right: 80px;
-		}
-		
-		header, footer{
-			text-align: center;
-			color: #407076;
-			font-weight: bold;
-		}
-		
-		h1{
-			color: #800000;
-			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-			text-align: center;
-		}
-		
-		h2{
-			color: #800000;
-			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-			text-align: center;
-		}
-		li{
-			list-style-type: square;
-			font-size: 130%;
-			margin-left: 100px;
-			margin-right: 100px;
-		}
-		p{
-		    font-size: 130%;
-			margin-left: 100px;
-			margin-right: 100px;			
-		}
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			
-		}-->
-	
-	</style>
 </head>
 
 <body>
-	<header>
-			<br>
-			<img  src="images/sphinx-text-logo.png" alt="Kind Sphinx Logo" width="200" height="100">
-			<h1>Kind Sphinx Company </h1>
-			
-	</header>
-	<nav>
-		<a href="index.html">Home</a>
-	</nav>	
+
+	<p><button class="center2" onclick="w3.toggleShow('#header')" style="background-color: brown; color:azure">Click to Hide/Show the Header</button></p>
+
+	<div w3-include-html="components/header.html" id="header">
+
+	</div>
+
+	<p><button class="center2" onclick="w3.toggleShow('#nav')" style="background-color: brown; color:azure">Click to Hide/Show the Navigation</button></p>
 	
+	<div w3-include-html="components/navigation.html" id="nav">
+	
+	</div> 
+
+
 	<main>
 			<h2>Contact Page</h2>
 
 			<h2 class="title">Sign Up For Our Company's Newsletter</h2>
-			
-			<form id="selector" action=”#”>
+		<div class="custom-div">
+			<p style="color:#800000; font-size: large;">I. Enter Your Contact Info:</p>
+			<form id="selector" >
 				<input id="name" type="text" placeholder="Name" required>
 			    <input id="email" type="text" placeholder="Email Address" required>
 				<input id="phone" type="text" placeholder="Phone Number" size="10" required>
@@ -83,62 +40,75 @@
 				<option value="VA">VA</option>
 				<option value="NC">NC</option>
 				<option value="SC">SC</option>
-				<option value="other (Not VA, NC, SC)">Other</option>
+				<option value="Other (Not VA, NC, SC)">Other</option>
 				</select>
 				<br><br>
 
 				<!--<button id="sub" type="submit">Submit</button>-->
             </form>
 			<br>
-			
-			<formn id="design-" class="selector2" action=”#” >
-				<input type="checkbox" id="basic"  name="design" value="basic">
+			<p style="color:#800000; font-size: large;">II. Choose Your Most Favorite Design Style:</p>
+			<form id="design-" class="selector2" action=”#” >
+				<input type="radio" id="basic"  name="design" value="Basic">
 				<label for="basic"> I like basic designs </label><br>
-				<input type="checkbox" id="advanced"  name="design" value="advanced">
+				<input type="radio" id="advanced"  name="design" value="Advanced">
 				<label for="advanced"> I like advanced designs</label><br>
-				<input type="checkbox" id="pro" name="design" value="pro">
+				<input type="radio" id="pro" name="design" value="Professional">
 				<label for="pro"> I like professional designs</label>
 		        <br><br>
-				<button type="submit">Submit</button>
+				<!--<button type="submit">Submit</button>-->
 				
 			</form>
-			<br>
-			<div id="dispPicks">
+			
+			
+			<p style="color:#800000; font-size: large;">III. Enter Your Prefered Contact Method:</p>
 			<form id="prefer" class="selector2" action=”#”> 	
-			<input type="radio" id="email" name="preference" value="email">
-			<label for="email">I prefere to be contacted through email</label><br>
-            <input type="radio" id="text" name="preference" value="text">
-            <label for="text">I prefere to be contacted through text</label><br>
-            <input type="radio" id="nomatter" name="preference" value="nomatter">
-            <label for="nomatter">I have no preference</label>
+				<input type="radio" id="email2" name="preference" value="Email">
+				<label for="email">I prefere to be contacted through email</label><br>
+            	<input type="radio" id="text" name="preference" value="Text">
+            	<label for="text">I prefere to be contacted through text</label><br>
+            	<input type="radio" id="nomatter" name="preference" value="No preference">
+            	<label for="nomatter">I have no preference</label>
 				<br><br>
-			<button type="submit">Submit</button>	
+			<!--<button type="submit">Submit</button>	-->
             </form>	
-		</div>	
-			<button onclick="info()">Show my Input</button>
-			<p id=result></p>
 			
-			
+
+			<p style="color: #800000; font-size: large;">IV. How Did You Hear About Our Company:</p>
+			<form id="hear" class="selector2" action=”#”> 	
+				<input type="radio" id="internet" name="hear" value="Internet">
+				<label for="internet">Internet</label><br>
+            	<input type="radio" id="bill-board" name="hear" value="Billboard Advertising">
+            	<label for="bill-board">Billboard Advertising</label><br>
+            	<input type="radio" id="family-friend" name="hear" value="Friends/Family">
+            	<label for="family-friend">Friends/Family</label><br>
+				<input type="radio" id="other" name="hear" value="Other">
+            	<label for="other">Other</label>
+			</form>
+			<br>
 	
+		    <p style="color:#800000; font-size: large;">** Information You Entered **</p>	
+			<p id="result"></p>
+	
+			<button  onclick="info()" style="background-color: aquamarine; color:rgb(11, 11, 61)" class="center2">Looks Good-Submit</button>
+		</div>
 	
 			<br><br>
+
 	</main>
 	
-	<p><button class="center" onclick="w3.toggleShow('#footer')">Click to Hide/Show the Footer</button></p>
+	<p><button class="center2" onclick="w3.toggleShow('#footer')" style="background-color: brown; color:azure">Click to Hide/Show the Footer</button></p>
 
-	<div id="footer">
-		<footer>
-			<p>Designed by <a href="brand-kind-sphinx.html">Kind Sphinx Company</a> 2021</p>
- 
-			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html">
-			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+	<div w3-include-html="components/footer.html" id="footer">
 
-			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
-	
-		</footer>
 	</div>
-
-
+	
+	 <a style="color:darkgreen; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Fcontact.html">Link to HTML validator</a> ||
+	 <a style="color:darkred; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Link to CSS validator</a> 	
+	 
+	
+	<script>
+		includeHTML();
+	</script>
 
 </body></html>	

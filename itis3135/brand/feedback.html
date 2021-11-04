@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="scripts/brand.js"></script>
+	<script src="scripts/include.js"></script>
+      <title>Kiarash Shirani | ITIS 3135-051 | Feedback page</title>
+   </head>
+
+   <body>
+
+    <p><button class="center2" onclick="w3.toggleShow('#header')" style="background-color: brown; color:azure">Click to Hide/Show the Header</button></p>
+
+	<div w3-include-html="components/header.html" id="header">
+
+	</div>
+
+	<p><button class="center2" onclick="w3.toggleShow('#nav')" style="background-color: brown; color:azure">Click to Hide/Show the Navigation</button></p>
+	
+	<div w3-include-html="components/navigation.html" id="nav">
+	
+	</div> 
+<main>
+    <h2>Feedback Page</h2>
+
+    <div class="custom-div">
+      <form>
+         
+        <span style="color:#800000; font-size: large;" >Please enter your feedback/comment about our company:</span>
+         <br>
+         <textarea id="feedtext" rows = "6" cols = "70" name = "description">
+            
+         </textarea><br>
+         <input  onclick="feedBack()" style="background-color: aquamarine; color:rgb(11, 11, 61)" type = "button" value = "submit"/>
+      </form>
+      <p id=feed></p>
+    </div>  
+
+</main>
+
+
+      <p><button class="center2" onclick="w3.toggleShow('#footer')" style="background-color: brown; color:azure">Click to Hide/Show the Footer</button></p>
+
+      <div w3-include-html="components/footer.html" id="footer">
+  
+      </div>
+      
+          
+      <a style="color:darkgreen; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Ffeedback.html">Link to HTML validator</a>
+      <a style="color:darkred; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Ffeedback.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Link to CSS validator</a>  
+      
+      
+      <script>
+          includeHTML();
+      </script>
+
+   </body>
+</html>

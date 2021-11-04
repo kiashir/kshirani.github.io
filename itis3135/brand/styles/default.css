@@ -1,7 +1,7 @@
 body{
     background-color: #C9C5BA;
     color: #191970;
-    border-radius: 25px;
+    border-radius: 15px;
     border-style: dashed;
     border-width: 6px;
     border-color: #B22222;
@@ -32,14 +32,68 @@ li{
     margin-left: 100px;
     margin-right: 100px;
 }
-p{
+.p1{
     font-size: 130%;
     margin-left: 100px;
     margin-right: 100px;			
 }
 .center {
-    display: block;
+    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
     
+}
+
+div{
+    background-color: #C9C5BA;
+    border:#C9C5BA;
+    border-style: dashed;
+    /*border-radius: 25px;*/
+}
+
+/*a{
+    display: table-row;
+    text-align: center;
+    color: ghostwhite;
+}*/
+
+a:hover{
+    color: rgb(8, 92, 8);
+    text-decoration: underline overline;
+}
+
+button:hover{
+    background-color: rgb(0, 255, 128);
+    color: indigo;
+
+}
+
+nav{
+    text-align: center;
+    /*margin-left: 75px;
+	margin-right: 75px;*/
+}
+
+button{
+    background-color: #303050;
+    color: SandyBrown;
+    
+    
+
+}
+
+.center2{
+       display: block;
+       margin-left: auto;
+       margin-right: auto; 
+}
+
+.custom-div{
+    background-color: rgb(179, 186, 192);
+    border:#0c6109;
+    /*border-style: solid;*/
+    padding: 10px;
+    border-top: solid;
+    border-bottom: solid;
+    /*border-radius: 25px;*/ 
 }

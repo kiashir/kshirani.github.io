@@ -4,76 +4,32 @@
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css">
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<title>Kiarash Shirani,ITIS 3135-051 ,Whimsical Brand </title>
+	<script src="scripts/include.js"></script>
+	<title>Kiarash Shirani | ITIS 3135-051 | Whimsical Brand </title>
 	
-	<!-- 
-	<style>
-		body{
-			background-color: #C9C5BA;
-			color: #191970;
-			border-radius: 25px;
-			border-style: dashed;
-			border-width: 6px;
-			border-color: #B22222;
-			margin-left: 80px;
-			margin-right: 80px;
-		}
-		
-		header, footer{
-			text-align: center;
-			color: #407076;
-			font-weight: bold;
-		}
-		
-		h1{
-			color: #800000;
-			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-			text-align: center;
-		}
-		
-		h2{
-			color: #800000;
-			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-			text-align: center;
-		}
-		li{
-			list-style-type: square;
-			font-size: 130%;
-			margin-left: 100px;
-			margin-right: 100px;
-		}
-		p{
-		    font-size: 130%;
-			margin-left: 100px;
-			margin-right: 100px;			
-		}
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			
-		}
-	
-	</style>
-	-->
 </head>
-	
+
+
 <body>
-	<header>
-			<br>
-			<img  src="images/sphinx-text-logo.png" alt="Kind Sphinx Logo" width="200" height="100">
-			<h1>Kind Sphinx Company </h1>
-			<img id="image" src="images/sphinx-text-logo.png" alt="Kind Sphinx Logo" class="center" width="200" height="100">
-			
-	</header>
-	<nav>
-		<a href="contact.html">Contact</a>
-	</nav>	
+
+	<p><button class="center2" onclick="w3.toggleShow('#header')" style="background-color: brown; color:azure">Click to Hide/Show the Header</button></p>
+
+	<div w3-include-html="components/header.html" id="header">
+
+	</div>
+
+	<p><button class="center2" onclick="w3.toggleShow('#nav')" style="background-color: brown; color:azure">Click to Hide/Show the Navigation</button></p>
+	
+
+	<div w3-include-html="components/navigation.html" id="nav">
+	
+	</div>
+	
 	
 	<main>
 			<h2>Sphinx Brand Page</h2>
-			<!--<img id="image" src="images/sphinx-text-logo.png" alt="Kind Sphinx Logo" class="center" width="200" height="100">-->
-			<p>
+			
+			<p class="p1">
 				Kind Sphinx Co., we are a design company that offer top-tier designs.<br>
 				Our experts make creative designs based on your needs.<br>
 				We offer best prices and guarantee your complete satisfaction.<br>
@@ -89,7 +45,7 @@
 							
 			</ul>
 	
-			<p>
+			<p class="p1">
 				Our experienced team will come up with best designs for you.<br>
 				Contact us for a free consultation:<br><br>
 				<span style="color:#8B0000">Phone: 888-243-4422</span><br>
@@ -100,31 +56,19 @@
 			</p>
 			
 			
-	
-	
-	
-	
-	
 			<br><br>
 	</main>
 
-	<p><button class="center" onclick="w3.toggleShow('#footer')">Click to Hide/Show the Footer</button></p>
+	<p><button class="center2" onclick="w3.toggleShow('#footer')" style="background-color: brown; color:azure">Click to Hide/Show the Footer</button></p>
 
-	<div id="footer">
+	<div w3-include-html="components/footer.html" id="footer">
 	
+	</div>
+	<a style="color:darkgreen; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Findex.html">Link to HTML validator</a>
+	<a style="color:darkred; font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Link to CSS validator</a> 
 	
-	
-	<footer>
-		<p>Designed by <a href="brand-kind-sphinx.html">Kind Sphinx Company</a> 2021</p>
- 
-		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html">
-			<button>Link to HTML validator</button></a>
-
-		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fbrand-kind-sphinx.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-			<button>Link to CSS validator</button></a>
-	
-	</footer>
-</div>
-
+	<script>
+		includeHTML();
+	</script>
 
 </body></html>	
