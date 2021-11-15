@@ -3,6 +3,10 @@
 <html lang="en"><head>
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="scripts/accordion.js"></script>
 	<title>Kiarash Shirani|ITIS 3135-051|Project Home Page</title>
 </head>
 
@@ -20,16 +24,75 @@
         <a href="class-c.html">Class C</a> ◈
         <a href="class-d.html">Class D</a> ◈
         <a href="class-k.html">Class K</a> ◈
-		<a href="extinguish.html">Extinguish</a> ◈
+		<a href="extinguish.html">Fire Safety</a> ◈
 		<!--<a href="quiz.html">Test Your Knowledge</a> ◈-->
         <a href="about.html">About</a>
     </nav>	
 	
 	<main>
-		<h2>◉ Home Page ◉</h2>      
+		<h2>🔥 Home Page 🔥</h2>      
 		<div class="row">
 			<div class="new-div">
 				<p>Fires can be classified into five different categories based of the agent that fuel them :</p>
+				<div id="tabs">
+					<h3>Class A: Ordinary Combustables</h3>
+					<div>
+						<p>
+							Class A fires are defined as ordinary combustibles. 
+							These types are fires use commonly flammable material as their fuel source. 
+							Wood, fabric, paper, trash, and plastics are common sources of Class A fires. 
+							This is essentially the common accidental fire encountered across several different industries. 
+							Trash fires are one such example. Class A fires are commonly put out with water or monoammonium phosphate.<br>
+							<!--Source: <a href="https://www.frontierfireprotection.com/five-classes-fire-extinguishers/">Click Here</a>-->
+						</p>
+					</div>
+					<h3>Class B: Flammable Liquids</h3>
+					<div>
+						<p>
+							A Class B fire uses a flammable liquid or gas as its fuel base. 
+							Common liquid based fuel sources include petroleum based oils and paints, kerosene, and gasoline. 
+							Flammable gases such as butane or propane are also common fuel sources. 
+							Class B fires are a common hazard in industries dealing with fuels, lubricants, and certain types of paint. 
+							Smothering these types of fires to remove oxygen is a common solution as are chemical reactions that produce similar effects.<br>
+							<!--Source: <a href="https://www.frontierfireprotection.com/five-classes-fire-extinguishers/">Click Here</a>-->
+						</p>
+					</div>
+					<h3>Class C: Electrical</h3>
+					<div>
+						<p>
+							The Class C fire is defined as a fire that uses electrical components and/or energized equipment as its fuel source. 
+							Electrical fires are often fueled by motors, appliances, and electronic transformers. 
+							Electrical fires are common in industries that deal with energy or make use of heavy electrically-powered equipment. 
+							However, electrical fires can occur on smaller scales in all businesses (i.e. an overloaded surge protector or bad wiring) and should be taken seriously. 
+							To extinguish such fires you cut the power off and use non-conductive chemicals to extinguish the fire.
+						</p>
+					</div>
+					<h3>Class D: Combustible Metals</h3>
+					<div>
+						<p>
+							The Class D fire is defined as one that uses a combustible metal as its fuel source. 
+							Examples of such combustible metals include titanium, magnesium, aluminum, and potassium. 
+							Note that there are also other metals with combustive properties you may encounter. 
+							Class D fires are a danger in laboratory environments. 
+							However, be aware that combustible metals are used as part of production and other industry processes, and you need to be certain of what materials you are using for day-to-day operations. 
+							When confronted with such a fire, common extinguishing agents such as water are ineffective and can be hazardous. 
+							To extinguish a Class D fire, use a dry powder agent. 
+							This absorbs the heat the fire requires to burn and smothers it as well. 
+						</p>
+					</div>
+					<h3>Class F (EU/AU) / Class K (US): Cooking Oils and Fats</h3>
+					<div>
+						<p>
+							A Class K fire is defined as a cooking fire involving combustion from liquids used in food preparation. 
+							Technically a type of liquid fire, Class K fires are distinct enough to warrant their own classification. 
+							Cooking fires are fueled by a wide range of liquid cooking materials. 
+							Greases, cooking oils, vegetable fat, and animal fat are some common fuel sources. 
+							Class K fires are naturally of concern in the food service and restaurant industry. 
+							Such fires can be very dangerous and far more destructive than you may think. 
+							Wet chemical fire extinguishers have become popular in putting out these types of fires.
+						</p>
+					</div>
+				<!--<p>Fires can be classified into five different categories based of the agent that fuel them :</p>
 				<ul>
 					<li>Class A: Ordinary Combustables</li><br>
 					<li>Class B: Flammable Liquids</li><br>
@@ -37,24 +100,43 @@
 					<li>Class D: Combustible Metals</li><br>
 					<li>Class F (EU/AU) / Class K (US): Cooking Oils and Fats</li>
 
-				</ul>
+				</ul>-->
+				</div><br>
+				Source: <a href="https://www.frontierfireprotection.com/five-classes-fire-extinguishers/">Click Here</a>
 			</div>
 
 			<div class="new-div2">
 				<p>It is very important to use proper fire extinguishing methods and safety procedures depending on the combustion type in order to control a fire.
 					In this website you will learn more about different classes of fire and proper ways of extinguishing/controlling them.
 				</p>
-				<p>Fires need three elements to keep burning:</p>
+				<p>Four things must be present at the same time in order to produce fire:</p>
+				<ul>
+					<li>Enough oxygen to sustain combustion</li>
+					<li>Enough heat to raise the material to its ignition temperature</li>
+					<li>Fuel or combustible material</li>
+					<li>Chemical, exothermic reaction</li>
+				</ul>
+				<!--<p>Fires need three elements to keep burning:</p>-->
 				<br>
 				<figure>
 					<img  class="fig-center" src="images/fire-triangle.jpg" alt="Fire Triangle" width="182" height="182">
 					<figcaption>Fire Triangle</figcaption>
 				</figure>
+				<hr>
+				<p>Oxygen, heat, and fuel are frequently referred to as the "fire triangle." 
+					Add in the fourth element, the chemical reaction, and you actually have a fire "tetrahedron." 
+					The important thing to remember is: take any of these four things away, and you will not have a fire or the fire will be extinguished.
+					Essentially, fire extinguishers put out fire by taking away one or more elements of the fire triangle/tetrahedron.
+					Fire safety, at its most basic, is based upon the principle of keeping fuel sources and ignition sources separate.
+					
+					</p>
 			</div>
 		</div>
 		<br>
 	<div class="custom-div">
-		<h3>In the Home</h3>
+		<h2>In the Home</h2>
+		<img  style="display:block; margin-left: auto; margin-right: auto;" src="images/home-picture.svg" alt="Home" width="200" height="100">
+		
 		<ul>
 			<li>People feel the safest in their homes, however residential properties are where most fires and fire deaths occur.</li><br>
 			<li>76% of all structure fires occurred in residential properties.</li><br>
