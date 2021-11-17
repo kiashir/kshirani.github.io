@@ -1,0 +1,39 @@
+#img{
+    border-radius: 60%;
+    border: 5px solid rgb(6, 70, 6);
+}
+
+body{
+    background-color: rgb(62, 110, 57);
+    color:azure;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(235, 174, 122)/*#FFDAB9*/;
+}
+
+a:hover{
+    text-decoration: overline underline;
+    color: lightgreen;
+}
+
+header, footer{
+    text-align: center;
+    color: #F4AC45;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4{
+    color:azure; /*#FFefbd;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
