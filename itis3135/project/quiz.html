@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/quiz.js"></script>
+	<title>Kiarash Shirani|ITIS 3135-051|Quiz</title>
+</head>
+
+<body>
+	<header>
+			<h1>Fire Safety & Prevention</h1>
+			<img src="images/question.jpg" alt="Question Mark Logo" width="100" height="100">
+	</header>
+	<nav>
+        <a href="index.html">Home</a> ◈
+        <a href="class-a.html">Class A</a> ◈
+        <a href="class-b.html">Class B</a> ◈
+        <a href="class-c.html">Class C</a> ◈
+        <a href="class-d.html">Class D</a> ◈
+        <a href="class-k.html">Class K</a> ◈
+		<a href="extinguish.html">Fire Safety</a> ◈
+		<a href="quiz.html">Knowledge Test</a> ◈
+        <a href="about.html">About</a>
+
+
+    </nav>	
+	
+	<main>
+		<h2>🔥 Test Your Knowledge 🔥</h2>
+        <p style="color:#f4f800; font-size: large;">1. Is a Class K fire cooking media (vegetable or animal oils and fats)?</p>
+        <form action=”#” >
+            <input type="radio" id="yes"  name="q1" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no"  name="q1" value="no">
+            <label for="no">No</label><br>
+            
+            
+            
+        </form>
+        <br>
+        <button onclick="questionOne()">Check Your Answer</button>
+        <p id="check1"></p>
+
+        <p class="quiz">2. The correct way to extinguish a fire to aim.</p>
+        <form action=”#” >
+            <input type="radio" name="q2" >
+            <label >At the center</label><br>
+            <input type="radio" name="q2">
+            <label >At the base</label><br>
+            <input type="radio" name="q2">
+            <label >At the top</label><br>
+            <input type="radio" name="q2">
+            <label >At the side</label><br>
+           
+            
+        </form>
+        <br>
+        <button onclick="questionTwo()">Check Your Answer</button>
+        <p id="check2"></p>
+
+        <p class="quiz">3. Which are Class A, B, and C fires?</p>
+        <form action=”#” >
+            <input type="radio" name="q3" >
+            <label >Metal, electric, cooking oil</label><br>
+            <input type="radio" name="q3" >
+            <label >Trash, flammable liquid, electrical</label><br>
+            <input type="radio" name="q3">
+            <label >Electrical, metal, dry chemical</label><br>
+            <input type="radio" name="q3">
+            <label >Cloth, metal, cooking oil</label><br>
+            
+            
+        </form>
+        <br>
+        <button onclick="questionThree()">Check Your Answer</button>
+        <p id="check3"></p>
+
+        <p class="quiz">4. Which one is a Class B fire?</p>
+        <form action=”#” >
+            <input type="radio" name="q4">
+            <label >Trash</label><br>
+            <input type="radio" name="q4">
+            <label >Metal</label><br>
+            <input type="radio" name="q4">
+            <label >Gasoline</label><br>
+            <input type="radio" name="q4">
+            <label >Cloth</label><br>
+            
+            
+        </form>
+        <br>
+        <button onclick="questionFour()">Check Your Answer</button>
+        <p id="check4"></p>
+
+        <p class="quiz">5. Which one is a Class A fire?</p>
+        <form action=”#” >
+            <input type="radio" name="q5">
+            <label >Electrical</label><br>
+            <input type="radio" name="q5">
+            <label >Cloth</label><br>
+            <input type="radio" name="q5">
+            <label >Metal</label><br>
+            <input type="radio" name="q5">
+            <label >Flammable liquid</label><br>
+            
+            
+        </form>
+        <br>
+        <button onclick="questionFive()">Check Your Answer</button>
+        <p id="check5"></p>
+
+        <p class="quiz">6. Are Class D fire combustible metals and combustible metal alloys? </p>
+        <form action=”#” >
+            <input type="radio" name="q6">
+            <label >Yes</label><br>
+            <input type="radio" name="q6">
+            <label >No</label><br>
+ 
+           
+            
+        </form>
+        <br>
+        <button onclick="questionSix()">Check Your Answer</button>
+        <p id="check6"></p>
+
+        <p class="quiz">7. Are Class B & C fires wood and metal?</p>
+        <form action=”#” >
+            <input type="radio" name="q7">
+            <label >Yes</label><br>
+            <input type="radio" name="q7">
+            <label >No</label><br>
+        </form>
+        <br>
+        <button onclick="questionSeven()">Check Your Answer</button>
+        <p id="check7"></p>
+
+        <p class="quiz">8. What does P.A.S.S. stand for?</p>
+        <form action=”#” >
+            <input type="radio" name="q8">
+            <label >Please allow slow storms</label><br>
+            <input type="radio" name="q8">
+            <label >Press, armor, sit, stand</label><br>
+            <input type="radio" name="q8">
+            <label >Press, aim, squeeze, sweep</label><br>
+            <input type="radio" name="q8">
+            <label >Palm, arm, shoulder, snap</label><br>
+        </form>
+        <br>
+        <button onclick="questionEight()">Check Your Answer</button>
+        <p id="check8"></p>
+
+        <p class="quiz">9. Are Class A & B fires wood and flammable liquids?</p>
+        <form action=”#” >
+            <input type="radio" name="q9">
+            <label >Yes</label><br>
+            <input type="radio" name="q9">
+            <label >No</label><br>
+        </form>
+        <br>
+        <button onclick="questionNine()">Check Your Answer</button>
+        <p id="check9"></p>
+
+        <p class="quiz">10. It is okay to re-enter the building to get personal effects 
+            (coat, wallet, purse, etc) during the fire alarm, 
+            as long as there is no smoke in your area. </p>
+        <form action=”#” >
+            <input type="radio" name="q10">
+            <label >True</label><br>
+            <input type="radio" name="q10">
+            <label >False</label><br>
+        </form>
+        <br>
+        <button onclick="questionTen()">Check Your Answer</button>
+        <p id="check10"></p>
+
+    </main>
+	
+	<footer>
+
+ 
+		<br>
+	
+		<p style="color: rgb(251, 255, 0);">Page built by <a href="../brand/index.html">K. S. C.</a> 2021</p>
+	
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fproject%2Fquiz.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fkshirani%2Fitis3135%2Fproject%2Fquiz.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+	
+	</footer>
+
+
+
+</body></html>

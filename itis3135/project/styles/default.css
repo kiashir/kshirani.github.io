@@ -131,7 +131,7 @@ table
 button{
 	background-color: brown;
 	color:white;
-	font-family:Impact,Tahoma;
+	font-family: Tahoma;
 }
 
 input{
@@ -247,4 +247,9 @@ custom-fig{
 	border-radius: 10px;
 	border-color: rgb(217, 221, 158);
 	background-color: rgb(94, 8, 8);
+}
+
+.quiz{
+	color:#f4f800; 
+	font-size: large;
 }

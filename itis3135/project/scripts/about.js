@@ -16,8 +16,8 @@ $(document).ready(function() {
             $.each(data, function(){
                 $.each(this, function(key, value){
                   $("#about").append(
-                     "<h3>" + value.project-naam + "</h3>" +
-                     value.project-owner + "<br>" + 
+                     "<h3>" + value.title + "</h3>" +
+                     value.owner + "<br>" + 
                      value.purpose + "<br><br>"
                   )
               })  
