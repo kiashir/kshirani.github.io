@@ -253,3 +253,8 @@ custom-fig{
 	color:#f4f800; 
 	font-size: large;
 }
+
+button:hover{
+	background-color: cadetblue;
+	color: darkblue;
+}
